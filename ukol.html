@@ -7,12 +7,23 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<br>
     <p onmouseover="mouseOver()" onmouseout="mouseOut()">V elipse spí lev.
     </p>
 
-    <button class="tlacitko" onclick="cervenyPoKliknuti()">Červený po kliknutí</button>
-    <button class="tlacitko" onclick="vetsiPoKliknuti()">Větší po kliknutí</button>
+    <button onclick="cervenyPoKliknuti()">Červený po kliknutí</button>
+    <button onclick="vetsiPoKliknuti()">Větší po kliknutí</button>
+
+</br>
+	<audio id="zvukovaStopa" controls src="audio/dingdingdang.mp3"></audio>
+</br>
+	
+	<button onclick="startAudio()">Zapni píseň</button>
+	<button onclick="pauza()">Pauzni</button>
+	<button onclick="hlasitostNula()">Hlasitost 0</button>
+	<button onclick="hlasitostPul()">Hlasitost 0.5</button>
+	<button onclick="hlasitostJedna()">Hlasitost 1</button>
+	<button onclick="zacatek()">Na začátek</button>
 
 	<script src="main.js"></script>
 

@@ -11,7 +11,6 @@ function mouseOut() {
 
 // Úkol 1: Tlačítko “červené po kliknutí” bude odstavci přidávat/odebírat 
 //třídu, která bude barvu písma v odstavci měnit na červenou.
-
 function cervenyPoKliknuti() {
     odstavec.classList.toggle('cerveny')
 }
@@ -23,6 +22,33 @@ function cervenyPoKliknuti() {
      odstavec.style.fontSize = (parseFloat(computedSize) + 1) + 'px';
  }
 
-
 // Úkol 3: Dopracuj ovládání audio souboru:
-// pauznutí zvukové stopy, nastavení zvuku na 0, 0.5 a 1, vrácení se na začátek
+// pauznutí zvukové stopy, 
+// nastavení zvuku na 0, 0.5 a 1, 
+// vrácení se na začátek
+let audioFile = document.getElementById('zvukovaStopa');
+
+function startAudio() {
+    audioFile.play();
+}
+
+function pauza() {
+    audioFile.pause();
+}
+
+function hlasitostNula() {
+    audioFile.volume = 0.0;
+}
+
+function hlasitostPul() {
+    audioFile.volume = 0.5;
+}
+
+function hlasitostJedna() {
+    audioFile.volume = 1.0;
+}
+
+function zacatek() {
+    audioFile.currentTime = 0;
+    audioFile.play();
+}

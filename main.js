@@ -17,9 +17,12 @@ function cervenyPoKliknuti() {
 
 // Úkol 2: přidej tlačítko “větší po kliknutí”, které písmo zvětší 
 // o jeden pixel oproti jeho aktuální velikost.
- function vetsiPoKliknuti() {
-     let computedSize = window.getComputedStyle(odstavec, null).getPropertyValue('font-size');
-     odstavec.style.fontSize = (parseFloat(computedSize) + 1) + 'px';
+let computedSize = 16
+function vetsiPoKliknuti() {
+//      let computedSize = window.getComputedStyle(odstavec, null).getPropertyValue('font-size');
+//      odstavec.style.fontSize = (parseFloat(computedSize) + 1) + 'px'; 
+   odstavec.style.fontSize = computedSize + 1 + 'px';
+   computedSize = computedSize + 1;
  }
 
 // Úkol 3: Dopracuj ovládání audio souboru:
